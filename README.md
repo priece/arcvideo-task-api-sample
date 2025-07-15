@@ -1,4 +1,4 @@
-# arcvideo-task-api-sample
+# totalmedia-task-api-sample
 A sample code for Arcvideo Live Task API calling.
 
 # Features
