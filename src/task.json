@@ -1,0 +1,67 @@
+{
+    "name": "live-task-01",
+    "inputs": [
+        {
+            "signalType": 0,
+            "inputType": "Network",
+            "networkStream": {
+                "uri": "rtp://239.4.1.2:5001"
+            }
+        }
+    ],
+    "outputs": [
+        {
+            "index": 0,
+            "refStream": "s01",
+            "outputType": "RtpStreaming",
+            "outputParams": {
+                "uri": "rtp://239.5.1.1:5001"
+            }
+        }
+    ],
+    "streams": [
+        {
+            "markId": "s01",
+            "videoEncoder": {
+                "codec": "MPEG2",
+                "width": 1920,
+                "height": 1080,
+                "frameRate": 29.97,
+                "aspectRatio": "16:9",
+                "bitrate": 12000,
+                "rateControl": "CBR",
+                "extendParams": {
+                    "profile": "Main",
+                    "qualityLevel": 1,
+                    "gopSize": 30,
+                    "bitDepth": 8,
+                    "chromaSampling": "420",
+                    "vbvSize": 1050,
+                    "vbvDelay": 700,
+                    "bFrame": 0,
+                    "interlace": 2,
+                    "fieldFirstMode": -1,
+                    "gopMode": 1
+                },
+                "aiEnhance": {
+                    "deblock": 0,
+                    "denoise": 0,
+                    "delight": 0,
+                    "superResolution": 0,
+                    "frameRateUpscaling": 5
+                }
+            },
+            "audioEncoders": [
+                {
+                    "index": 0,
+                    "passthrough": false,
+                    "codec": "AAC",
+                    "channel": 2,
+                    "profile": "LC",
+                    "bitrate": 64000,
+                    "sampleRate": 44100
+                }
+            ]
+        }
+    ]
+}
