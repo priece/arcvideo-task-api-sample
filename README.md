@@ -13,6 +13,8 @@ A sample code for Arcvideo Live Task API calling.
 - pip install requests
 
 # Run
+```
 yum install python3
 pip install requests
 python3 create_task.py
+```
