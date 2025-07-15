@@ -1,5 +1,5 @@
 # totalmedia-task-api-sample
-A sample code for Arcvideo Live Task API calling.
+A sample code for TotalMedia Live Task API calling.
 
 # Features
 - Create task by JSON file.
